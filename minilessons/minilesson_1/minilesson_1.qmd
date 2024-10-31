@@ -22,6 +22,8 @@ execute:
   - Installing VSCode on **[Mac](https://code.visualstudio.com/docs/languages/python)** and **[Windows](https://code.visualstudio.com/docs/languages/python)**
   - Setting up **[python](https://code.visualstudio.com/docs/languages/python)** for VSCode 
 
+code source **[Link](https://stackoverflow.com/questions/66684882/color-some-x-labels-in-altair-plot)**
+
 
 ## Basics 
 <!-- How to comment --->

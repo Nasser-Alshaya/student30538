@@ -3,13 +3,27 @@ title: "Spatial II"
 author: "Peter Ganong and Maggie Shi"
 date: today
 date-format: long
+toc: false
+execute: 
+    echo: true
+format:
+    html:
+        toc: false 
+---
+
+<!--
+---
+title: "Spatial II"
+author: "Peter Ganong and Maggie Shi"
+date: today
+date-format: long
 execute: 
     echo: true
 format:
     beamer:
         toc: true
         fig-height: 2.5
-        include-in-header: header_pagenrs.tex
+        #include-in-header: header_pagenrs.tex
 include-before-body:
   text: |
     \RecustomVerbatimEnvironment{verbatim}{Verbatim}{
@@ -18,22 +32,10 @@ include-before-body:
       breaksymbolleft={},
       breaklines
     }
-    
+  
 --- 
-<!--
----
-title: "Spatial II"
-author: "Peter Ganong and Maggie Shi"
-date: today
-date-format: long
-toc: false
-execute: 
-    echo: true
-format:
-    html:
-        toc: false 
----
--->
+--> 
+
 # Introduction to data structures in geopandas (6.2)
 
 ## Geopandas roadmap
@@ -42,6 +44,7 @@ In practice, we won't be coding our geodata by hand... Instead we are going to u
 
 ```{python}
 import geopandas as gpd
+
 ```
 
 
@@ -91,7 +94,7 @@ The skill they should learn is what a CRS is and how to look up the EPSG numbers
 
 ```{python}
 #in same dir:  `.shx` and `.dbf`
-filepath = "data/shp/austin_pop_2019.shp"
+filepath = "/Users/nasser.alshaya/Desktop/Fall-2024/PPHA-30538/Repos/student30538/before_lecture/spatial_9/data/shp/austin_pop_2019.shp"
 data = gpd.read_file(filepath)
 ```
 
